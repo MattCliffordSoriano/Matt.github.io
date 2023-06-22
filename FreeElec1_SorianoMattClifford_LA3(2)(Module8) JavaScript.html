@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even Number Dasher</title>
+</head>
+<body>
+  <h1>Even Number Dasher</h1>
+
+  <label for="numberInput">Enter a number:</label>
+  <input type="number" id="numberInput">
+  <button onclick="insertDashes()">Insert Dashes</button>
+  <p id="result"></p>
+
+  <script>
+    function insertDashes() {
+      var numberInput = document.getElementById('numberInput').value;
+      var result = document.getElementById('result');
+      
+      // Convert the input to a string
+      var numberString = numberInput.toString();
+      
+      // Create an empty string to store the result
+      var dashedString = '';
+
+      // Loop through each digit in the numberString
+      for (var i = 0; i < numberString.length; i++) {
+        var currentDigit = parseInt(numberString[i]);
+        var nextDigit = parseInt(numberString[i + 1]);
+
+        // Check if the current and next digits are even
+        if (currentDigit % 2 === 0 && nextDigit % 2 === 0) {
+          dashedString += currentDigit + '-';
+        } else {
+          dashedString += currentDigit;
+        }
+      }
+
+      result.textContent = dashedString;
+    }
+  </script>
+</body>
+</html>

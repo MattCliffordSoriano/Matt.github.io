@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home-Base_5</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .green-bg {
+      background-color: blue;
+    }
+
+    .gray-bg {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      </tr>
+      <tr>
+        <td><label for="fname">Name:</label></td>
+        <td><input type="text" id="fname" name="fname" maxlength="50" size="30"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" id="email" name="email" maxlength="50" size="30"></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><textarea id="address" name="address" rows="5" cols="31"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="postcode">Postcode:</label></td>
+        <td><input type="number" id="postcode" name="postcode" maxlength="50" size="30"></td>
+      </tr>
+    </table><br><br>
+    <table class="table table-bordered green-bg">
+      <tr>
+        <th style="width:250px" align="left">Product</th>
+        <th style="width:145px" align="left">Part Number</th>
+        <th style="width:70px" align="left">Quality</th>
+        <th style="width:125px" align="left">Unit Price</th>
+        <th style="width:130px" align="left">Subtotal</th>
+      </tr>
+      <tr>
+        <td>EconoBox</td>
+        <td>LB100</td>
+        <td>3</td>
+        <td>R5</td>
+        <td>R15</td>
+      </tr>
+      <tr>
+        <td>Standard Box</td>
+        <td>LB200</td>
+        <td>4</td>
+        <td>R10</td>
+        <td>R20</td>
+      </tr>
+      <tr>
+        <td>Premium Box/TD></td>
+        <td>LB300</td>
+        <td>1</td>
+        <td>R15</td>
+        <td>R15</td>
+      </tr>
+      <tr>
+        <td>Deluxe Box/TD></td>
+        <td>LB400</td>
+        <td>0</td>
+        <td>R20</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Super Deluxe Box/TD></td>
+        <td>LB500</td>
+        <td>1</td>
+        <td>R30</td>
+        <td>R30</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="right">Total</td>
+        <td>R100</td>
+      </tr>
+    </table><br><br>
+    <form>
+      <table class="table gray-bg">
+        <tr>
+          <th><label for="card-type">Credit Card Details</label></th>
+          <td><p>Card Type:</p></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="mastercard" name="card-type"></td>
+          <td><label for="mastercard">Mastercard</label></td>
+          <td><label for="card-number">Card Number:</label></td>
+          <td><input type="number" id="card-number" name="card-number"></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="visa" name="card-type"></td>
+          <td><label for="visa">Visa</label></td>
+          <td><label for="expiry-date">Expiry date:</label></td>
+          <td><input type="number" id="expiry-date" name="expiry-date"></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="amex" name="card-type"></td>
+          <td><label for="amex">American Express</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="diners-club" name="card-type"></td>
+          <td><label for="diners-club">Diners Club</label></td>
+        </tr>
+      </table><br><br><br>
+    </form>
+    <form>
+      <table class="table">
+        <tr>
+          <th><label for="delivery-address">Delivery Address:</label></th>
+          <td><textarea id="delivery-address" name="delivery-address" rows="10" cols="30"></textarea></td>
+        </tr>
+      </table><br><br>
+    </form>
+    <form>
+      <table cellspacing="5" cellpadding="5">
+        <tr>
+          <th><input type="submit" value="Send order" class="btn btn-primary"></th>
+          <th><input type="reset" value="Clear form" class="btn btn-secondary"></th>
+        </tr>
+      </table>
+    </form>
+  </form>
+</body>
+</html>
